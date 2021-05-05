@@ -1,0 +1,277 @@
+
+<!doctype html>
+<html lang="id" class="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://www.pelatihanp3i.id/" />
+
+    <meta name="description" content="pelatihanp3i - halaman utama atau home page">
+    <meta name="keywords" content="pelatihanp3i, halaman utama, home page">
+
+    <link rel="shortcut icon" href="storage/logo/logo.png" type="image/x-icon">
+
+    <title>pelatihanp3i - halaman utama</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- font awesome core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .active_menu {
+            display: block;
+        }
+
+        .carousel-open:checked+.carousel-item {
+            position: static;
+            opacity: 100;
+        }
+
+        .snap {
+            -ms-scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory;
+            -ms-overflow-style: none;
+            scroll-behavior: smooth
+        }
+
+        .snap::-webkit-scrollbar {
+            display: none;
+        }
+
+        .snap>div {
+            scroll-snap-align: center;
+        }
+
+        .active {
+            background-color: #92400e;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            transition: all .6s ease;
+            transform-origin: center center;
+        }
+
+    </style>
+
+
+</head>
+
+<body x-data="{ atTop: true, openModal: false }" x-on:scroll.window="atTop = (window.pageYOffset > 10) ? false : true; "
+    x-on:keydown.escape=" openModal = openModal ? false : true">
+
+    
+    
+    <section class="w-full p-6 z-50" x-bind:class="{ 'bg-white shadow-lg fixed': !atTop }">
+        <nav x-data="{show:false}" class="flex items-center justify-between flex-wrap bg-white p-6">
+            <div class="flex items-center flex-shrink-0 mr-6">
+                <a href="/">
+                    <span class="text-xl tracking-tight font-bold text-yellow-900">
+                        UD. CAHAYA AGUNG
+                    </span>
+                </a>
+            </div>
+            <div class="block md:hidden">
+                <button @click="show=!show"
+                    class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-800 hover:border-gray-700">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }"
+                class="w-full block flex-grow md:flex md:justify-end md:w-auto">
+                <div>
+                    <a class="links text-sm block md:inline-block px-4 py-2 leading-none rounded border-white transform transition-all text-yellow-900 hover:text-base hover:font-bold hover:scale-110 hover:text-yellow-700 hover:border-transparent hover:font-bold mt-4 md:mt-0"
+                        href="#upvc">Stainless Steel</a>
+                    <a class="links text-sm block md:inline-block px-4 py-2 leading-none rounded border-white transform transition-all text-yellow-900 hover:text-base hover:font-bold hover:scale-110 hover:text-yellow-700 hover:border-transparent hover:font-bold mt-4 md:mt-0"
+                        href="#penjelasan">Penjelasan</a>
+                    <a class="links text-sm block md:inline-block px-4 py-2 leading-none rounded border-white transform transition-all text-yellow-900 hover:text-base hover:font-bold hover:scale-110 hover:text-yellow-700 hover:border-transparent hover:font-bold mt-4 md:mt-0"
+                        href="#kontak">Kontak</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+
+    
+    
+    <section class="text-center py-36 page-section" id="upvc" div data-aos="fade-up" data-aos-duration="1000"
+        data-aos-anchor-placement="top-bottom"
+        style="background-position: bottom !important; background-attachment: fixed !important; background-repeat: no-repeat !important; background-size: cover !important;background: linear-gradient(rgba(236, 233, 185, 0.5), rgba(236, 233, 185, 0.5)), url('../images/STAINLESS/Picture2.jpg')">
+
+        <h1 class="md:text-8xl text-4xl font-bold text-yellow-900">
+            Stainless Steel
+        </h1>
+    </section>
+    
+    
+
+    
+    <section class="container mx-auto py-16 px-20" div data-aos="fade-right" data-aos-duration="1000"
+        data-aos-anchor-placement="center-bottom">
+        <div class="text-yellow-800">
+
+            <h1 class="text-2xl font-bold">Stainless Steel</h1>
+            <div class="w-20 h-1 bg-yellow-500 rounded mt-2 mb-4"></div>
+            <p class="pt-4">
+                Stainless Steel merupakan salah satu bahan besi anti karat. Umumnya bahan stainless
+                steel dipakai untuk kebutuhan peralatan di rumah sakit, restoran dan rumah tangga.
+                Bahkan beberapa tahun terakhir bahan stainless steel mulai digunakan untuk pembuatan
+                Pagar, Railing, Balkon, Kanopy dll.
+                Berikut alasan memilih bahan Stainless Steel untuk bangunan anda:
+            </p>
+        </div>
+
+        <section class="page-section" id="penjelasan">
+            <div class="flex font-bold text-yellow-800 pt-4">
+                <div>
+                    <div class="bg-white max-w-max mx-auto" x-data="{selected:null}">
+                        <ul class="shadow-box">
+
+                            <li class="relative border-b">
+
+                                <button type="button" class="w-full py-6 text-left"
+                                    @click="selected !== 1 ? selected = 1 : selected = null">
+                                    <div class="flex items-center justify-between capitalize font-bold text-2xl">
+                                        <span>
+                                            1. keunggulan
+                                        </span>
+                                        <span class="ico-plus"></span>
+                                    </div>
+                                </button>
+
+                                <div class="relative overflow-hidden transition-all max-h-0 duration-700 capitalize"
+                                    style="" x-ref="container1"
+                                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                    <div class="p-4">
+                                        <p>
+                                            stainless steel yaitu anti karat, tahan terhadap
+                                            cuaca apapun, kokoh dan aman.
+                                            Dari segi estetika stainless steel
+                                            mampu membuat tampilan lebih
+                                            mewah hingga perawatan yang
+                                            mudah
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    
+
+
+    
+    <section class="text-gray-600 body-font relative page-section" id="kontak">
+        <div class="absolute inset-0 bg-gray-300">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.193932715081!2d106.8571461!3d-6.1911175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc41f8fbdd084740f!2sCahaya%20Agung%20Toko!5e0!3m2!1sen!2sid!4v1619635316401!5m2!1sen!2sid">
+            </iframe>
+        </div>
+        <div class="container px-5 py-48 mx-auto flex md:py-24">
+            <div
+                class="text-yellow-900 lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md hidden md:block">
+
+                <h2 class="text-yellow-900 font-bold text-lg mb-1 font-medium title-font capitalize">
+                    UD. CAHAYA AGUNG
+                </h2>
+
+                <p class="leading-relaxed mb-5 text-yellow-800 font-bold">
+                    Commercial Building Improvement
+                </p>
+
+                <div class="relative mb-4">
+                    <div class="font-bold">Telp 1: <span class="text-yellow-800">021-4202212</span></div>
+                </div>
+
+                <div class="relative mb-4">
+                    <div class="font-bold">Telp 2: <span class="text-yellow-800">021-4256731</span></div>
+                </div>
+
+                <div class="relative mb-4">
+                    <div class="font-bold">Telp 3: <span class="text-yellow-800">021-4222620</span></div>
+                </div>
+
+                <div class="relative mb-4">
+                    <div class="font-bold">Telp 4: <span class="text-yellow-800">021-4214732</span></div>
+                </div>
+
+                <div class="relative mb-4">
+                    <div class="font-bold">Whatsapp: <span class="text-yellow-800">081383518888</span></div>
+                </div>
+
+                <div class="relative mb-4">
+                    <div class="font-bold">Instagram: <span class="text-yellow-800">@cahayaagung_kacaaluminium</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <footer class="text-yellow-800 body-font font-bold">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-yellow-900">
+                <span class="ml-3 text-xl">UD. CAHAYA AGUNG</span>
+            </a>
+
+            <p class="text-sm text-yellow-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-yellow-200 sm:py-2 sm:mt-0 mt-4">
+                © 2021 —
+                <a href="/" class="text-yellow-900 ml-1" rel="noopener noreferrer" target="_blank">
+                    Commercial Building Improvement
+                </a>
+            </p>
+
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="https://wa.me/6281383518888"
+                    class="text-2xl mr-4 transition transition-all duration-700 transform hover:scale-125 hover:text-yellow-600"
+                    target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/cahayaagung_kacaalumunium/"
+                    class="text-2xl transition transition-all duration-700 transform hover:scale-125 hover:text-yellow-600"
+                    target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </span>
+
+        </div>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const links = document.querySelectorAll('.links');
+        const sections = document.querySelectorAll('.page-section');
+
+        function changeLinkState() {
+            let index = sections.length;
+
+            while (--index && window.scrollY + 200 < sections[index].offsetTop) {}
+
+            links.forEach((link) => link.classList.remove('active'));
+            links[index].classList.add('active');
+        }
+
+        changeLinkState();
+        window.addEventListener('scroll', changeLinkState);
+
+    </script>
+</body>
+
+</html>
