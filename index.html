@@ -62,9 +62,7 @@
 </head>
 
 <body x-data="{ atTop: true, openModal: false, showModal2: false}" x-on:scroll.window="atTop = (window.pageYOffset > 10) ? false : true; "
-    x-on:keydown.escape=" openModal = openModal ? false : true" :class="{'overflow-y-hidden': showModal2}">
-
-    
+    x-on:keydown.escape=" openModal = openModal ? false : true" :class="{'overflow-y-hidden': showModal2}"> 
     
     <section class="fixed z-50 w-full p-6" x-bind:class="{ 'bg-white shadow-lg': !atTop }">
         <nav x-data="{show:false}" class="flex flex-wrap items-center justify-between p-6 bg-white">
@@ -87,15 +85,15 @@
             <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }"
                 class="flex-grow block w-full md:flex md:justify-end md:w-auto">
                 <div>
-                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-900 hover:font-bold md:mt-0"
+                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
                         href="#hero">Halaman Utama</a>
-                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-900 hover:font-bold md:mt-0"
+                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
                         href="#tentang">Tentang Kami</a>
-                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-900 hover:font-bold md:mt-0"
+                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
                         href="#produk">Produk</a>
-
-
-                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-900 hover:font-bold md:mt-0"
+                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
+                        href="#batangan">Alumunium Batangan</a>
+                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
                         href="#kontak">Kontak</a>
                 </div>
             </div>
@@ -212,8 +210,8 @@
                 </h1>
                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
                     class="w-1/2 mx-auto text-base leading-relaxed text-yellow-800">
-                    Kami menyediakan produk dan jasa Kusen aluminium, Pintu, Jendela, Pintu folding, Pintu sliding,
-                    Kaca, Shower glass, Tempered glass, dan Frameless.
+                    Kami menyediakan produk dan jasa Kusen Aluminium, Pintu, Jendela, Pintu Folding, Pintu Sliding,
+                    Kaca, Shower Glass, Tempered Glass, dan Frameless.
                 </p>
             </div>
 
@@ -223,8 +221,8 @@
                     data-aos-delay="100">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/aluminium/10-Latest-Sliding-Glass-Door-Designs-With-Pictures-In-2020.jpg" width="361px"
-                            height="601px" />
+                            src="./images/ca_image/aluminium/10-Latest-Sliding-Glass-Door-Designs-With-Pictures-In-2020.jpg"
+                            width="361px" height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
@@ -233,7 +231,7 @@
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 title-font w-80 sm:w-auto">
                                 <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/aluminium/10-Latest-Sliding-Glass-Door-Designs-With-Pictures-In-2020.jpg', imgModalDesc: 'Kusen Aluminium' })"
                                     class="cursor-pointer">
-                                    Kusen aluminium
+                                    Kusen Aluminium
                                 </a>
                             </h2>
                             
@@ -252,16 +250,15 @@
                     data-aos-delay="500">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                             src="./images/ca_image/upvc/S__6365211.jpg" width="361px"
-                             height="601px" />
+                            src="./images/ca_image/upvc/S__6365211.jpg" width="361px" height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
 
                             <h2
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 capitalize title-font w-80 sm:w-auto">
-                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/upvc/S__6365211.jpg', imgModalDesc: 'Kusen Aluminium' })"
-                                   class="cursor-pointer">
+                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/upvc/S__6365211.jpg', imgModalDesc: 'Pintu' })"
+                                    class="cursor-pointer">
                                     Pintu
                                 </a>
                             </h2>
@@ -273,16 +270,15 @@
                     data-aos-delay="1000">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                             src="./images/ca_image/upvc/upvc-slider.jpg" width="361px"
-                             height="601px" />
+                            src="./images/ca_image/upvc/upvc-slider.jpg" width="361px" height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
 
                             <h2
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 capitalize title-font w-80 sm:w-auto">
-                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/upvc/upvc-slider.jpg', imgModalDesc: 'Kusen Aluminium' })"
-                                   class="cursor-pointer">
+                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/upvc/upvc-slider.jpg', imgModalDesc: 'Jendela' })"
+                                    class="cursor-pointer">
                                     Jendela
                                 </a>
                             </h2>
@@ -294,16 +290,17 @@
                     data-aos-delay="100">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/aluminium/Aluminum-Folding-Glass-Door-Systems.jpg" width="361px" height="601px" />
+                            src="./images/ca_image/aluminium/1-Aluminium-Bi-fold-Doors1-850x400.jpg"
+                            width="361px" height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
 
                             <h2
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 title-font w-80 sm:w-auto">
-                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/aluminium/Aluminum-Folding-Glass-Door-Systems.jpg', imgModalDesc: 'Pintu Follding' })"
+                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/aluminium/1-Aluminium-Bi-fold-Doors1-850x400.jpg', imgModalDesc: 'Pintu Folding' })"
                                     class="cursor-pointer">
-                                    Pintu folding
+                                    Pintu Folding
                                 </a>
                             </h2>
                         </div>
@@ -314,7 +311,8 @@
                     data-aos-delay="500">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/aluminium/d1dd77abd3b6830dfd6b1df1591be889.jpg" width="361px" height="601px" />
+                            src="./images/ca_image/aluminium/d1dd77abd3b6830dfd6b1df1591be889.jpg"
+                            width="361px" height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
@@ -323,7 +321,7 @@
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 title-font w-80 sm:w-auto">
                                 <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/aluminium/d1dd77abd3b6830dfd6b1df1591be889.jpg', imgModalDesc: 'Pintu Sliding' })"
                                     class="cursor-pointer">
-                                    Pintu sliding
+                                    Pintu Sliding
                                 </a>
                             </h2>
                         </div>
@@ -335,7 +333,8 @@
                     data-aos-delay="1000">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/kaca/istockphoto-1219800594-612x612.jpg" width="361px" height="601px" />
+                            src="./images/ca_image/kaca/istockphoto-1219800594-612x612.jpg" width="361px"
+                            height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
@@ -355,7 +354,8 @@
                     data-aos-delay="100">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/kaca/shower-encl-hero-966-1.jpg" width="361px" height="601px" />
+                            src="./images/ca_image/kaca/shower-encl-hero-966-1.jpg" width="361px"
+                            height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
@@ -364,7 +364,7 @@
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 title-font w-80 sm:w-auto">
                                 <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/kaca/shower-encl-hero-966-1.jpg', imgModalDesc: 'Shower Glass' })"
                                     class="cursor-pointer">
-                                    Shower glass
+                                    Shower Glass
                                 </a>
                             </h2>
                         </div>
@@ -375,7 +375,8 @@
                     data-aos-delay="500">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/kaca/06451e3ad6c24a3db2e43815e4d3f869.jpg" width="361px" height="601px" />
+                            src="./images/ca_image/kaca/06451e3ad6c24a3db2e43815e4d3f869.jpg" width="361px"
+                            height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
@@ -384,7 +385,7 @@
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 title-font w-80 sm:w-auto">
                                 <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/kaca/06451e3ad6c24a3db2e43815e4d3f869.jpg', imgModalDesc: 'Tempered Glass' })"
                                     class="cursor-pointer">
-                                    Tempered glass
+                                    Tempered Glass
                                 </a>
                             </h2>
                         </div>
@@ -395,14 +396,15 @@
                     data-aos-delay="1000">
                     <div class="relative flex">
                         <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full"
-                            src="./images/ca_image/kaca/0_Q4iOL3LvXS-7vwx4.jpg" width="361px" height="601px" />
+                            src="./images/ca_image/kaca/0_Q4iOL3LvXS-7vwx4.jpg" width="361px"
+                            height="601px" />
 
                         <div
                             class="relative z-10 flex items-center justify-center w-full h-64 px-8 py-10 transition-all transition duration-700 transform bg-white border-4 border-gray-200 opacity-0 hover:opacity-80 hover:scale-110">
 
                             <h2
                                 class="mb-1 text-2xl font-medium font-bold tracking-widest text-center text-yellow-500 capitalize title-font w-80 sm:w-auto">
-                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/kaca/0_Q4iOL3LvXS-7vwx4.jpg', imgModalDesc: 'Fleamess' })"
+                                <a @click="$dispatch('img-modal', {  imgModalSrc: './images/ca_image/kaca/0_Q4iOL3LvXS-7vwx4.jpg', imgModalDesc: 'Frameless' })"
                                     class="cursor-pointer">
                                     Frameless
                                 </a>
@@ -449,7 +451,7 @@
                         Baca Lebih Lanjut
                     </a>
                     <a href="/galeri.html"
-                       class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                        class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
                         Lihat Galeri
                     </a>
                 </div>
@@ -459,7 +461,7 @@
 
     <section class="body-font"
         style="background-position: bottom !important; background-attachment: fixed !important; background-repeat: no-repeat !important; background-size: cover !important;
-                    background: linear-gradient(rgba(236, 233, 185, 0.5), rgba(236, 233, 185, 0.5)), url('./images/ca_image/aluminium/Aluminum-Folding-Glass-Door-Systems.jpg')">
+                                    background: linear-gradient(rgba(236, 233, 185, 0.5), rgba(236, 233, 185, 0.5)), url('./images/ca_image/aluminium/1-Aluminium-Bi-fold-Doors1-850x400.jpg')">
 
         <div class="container flex flex-col items-center px-5 py-24 mx-auto md:flex-row">
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top-bottom"
@@ -484,7 +486,7 @@
                         Baca Lebih Lanjut
                     </a>
                     <a href="/galeri.html"
-                       class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                        class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
                         Lihat Galeri
                     </a>
                 </div>
@@ -493,7 +495,8 @@
             <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2" data-aos="fade-down" data-aos-duration="800"
                 data-aos-anchor-placement="top-bottom">
                 <img class="object-cover object-center rounded-lg shadow-2xl" alt="hero"
-                    src="./images/ca_image/aluminium/b_EASY-FRAME-TELESCOPIC-Metalglas-Bonomi-179370-rele8fc51eb.jpg" width="720px" height="600px" />
+                    src="./images/ca_image/aluminium/b_EASY-FRAME-TELESCOPIC-Metalglas-Bonomi-179370-rele8fc51eb.jpg"
+                    width="720px" height="600px" />
             </div>
         </div>
     </section>
@@ -503,7 +506,8 @@
             <div class="w-5/6 mb-10 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0" data-aos="fade-down" data-aos-duration="800"
                 data-aos-anchor="#kaca-section">
                 <img class="object-cover object-center rounded-lg shadow-2xl" alt="hero"
-                    src="./images/ca_image/kaca/Lunax-frameless-fire-doors.jpg" width="720px" height="600px" />
+                    src="./images/ca_image/kaca/Lunax-frameless-fire-doors.jpg" width="720px"
+                    height="600px" />
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor="#kaca-section"
                 class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
@@ -526,7 +530,7 @@
                         Baca Lebih Lanjut
                     </a>
                     <a href="/galeri.html"
-                       class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                        class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
                         Lihat Galeri
                     </a>
                 </div>
@@ -555,7 +559,7 @@
                         Baca Lebih Lanjut
                     </a>
                     <a href="/galeri.html"
-                       class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                        class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
                         Lihat Galeri
                     </a>
                 </div>
@@ -563,7 +567,8 @@
             <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2" data-aos="fade-down" data-aos-duration="800"
                 data-aos-anchor="#stell-section" data-aos-offset="-300">
                 <img class="object-cover object-center rounded-lg shadow-2xl" alt="hero"
-                    src="./images/ca_image/Stainless/6724635802132e5dc73803b338e64fae.jpg" width="720px" height="600px" />
+                    src="./images/ca_image/Stainless/6724635802132e5dc73803b338e64fae.jpg" width="720px"
+                    height="600px" />
             </div>
         </div>
     </section>
@@ -592,7 +597,7 @@
                         Baca Lebih Lanjut
                     </a>
                     <a href="/galeri.html"
-                       class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
+                        class="flex px-8 py-2 mx-auto mt-5 ml-2 text-lg text-white bg-yellow-800 border-0 rounded focus:outline-none hover:bg-yellow-600">
                         Lihat Galeri
                     </a>
                 </div>
@@ -601,6 +606,58 @@
     </section>
     
 
+    <section class="bg-yellow-100 body-font page-section" id="batangan">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col w-full mb-5 text-center">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-400"
+                    class="mb-4 text-2xl font-medium text-yellow-900 sm:text-3xl title-font">
+                    Alumunium Batangan
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-offset="-400"
+                    class="w-1/2 mx-auto text-base leading-relaxed text-yellow-800">
+                    Kami melayani penjualan aluminium batangan dan pengiriman. <br />
+                     Berikut kami sajikan kisaran harga aluminium per batang di UD. CAHAYA AGUNG :
+                </p>
+            </div>
+
+            <table 
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-offset="-400"
+            class="min-w-full text-center border border-yellow-300 divide-y divide-yellow-300 table-auto">
+                <thead class="bg-yellow-400">
+                    <tr>
+                        <th
+                            class="px-6 py-3 font-medium tracking-wider text-center text-yellow-900 uppercase border-2 border-yellow-300">
+                            Kategori</th>
+                        <th
+                            class="px-6 py-3 font-medium tracking-wider text-center text-yellow-900 uppercase border-2 border-yellow-300">
+                            Kode</th>
+                        <th
+                            class="px-6 py-3 font-medium tracking-wider text-center text-yellow-900 uppercase border-2 border-yellow-300">
+                            Ukuran</th>
+                        <th
+                            class="px-6 py-3 font-medium tracking-wider text-center text-yellow-900 uppercase border-2 border-yellow-300">
+                            Kisaran Harga</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    
+    
+    
     
 
 
