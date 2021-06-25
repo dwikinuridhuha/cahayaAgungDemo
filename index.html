@@ -61,7 +61,8 @@
 
 </head>
 
-<body x-data="{ atTop: true, openModal: false, showModal2: false}" x-on:scroll.window="atTop = (window.pageYOffset > 10) ? false : true; "
+<body class="overflow-x-hidden"
+x-data="{ atTop: true, openModal: false, showModal2: false}" x-on:scroll.window="atTop = (window.pageYOffset > 10) ? false : true; "
     x-on:keydown.escape=" openModal = openModal ? false : true" :class="{'overflow-y-hidden': showModal2}"> 
     
     <section class="fixed z-50 w-full p-6" x-bind:class="{ 'bg-white shadow-lg': !atTop }">
