@@ -62,11 +62,16 @@
             scroll-snap-align: center;
         }
 
+        nav a {
+            text-decoration: none !important;
+            color: black !important;
+        }
+
         .active {
             background-color: #92400e;
             padding: 10px 20px;
             border-radius: 10px;
-            color: #fff;
+            color: #fff !important;
             font-weight: bold;
             transition: all .6s ease;
             transform-origin: center center;
@@ -240,15 +245,19 @@
             <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }"
                  class="flex-grow block w-full md:flex md:justify-end md:w-auto">
                 <div>
-                    <a class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
-                       href="/">Halaman Utama</a>
+                    <a  
+                        class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
+                       href="#galeri">Galeri</a>
+                    <a 
+                    class="block px-4 py-2 mt-4 text-sm leading-none border-white rounded links md:inline-block hover:border-transparent hover:text-yellow-400 hover:font-bold md:mt-0"
+                       href="#kontak">Kontak</a>
                 </div>
             </div>
         </nav>
     </section>
     
 
-    <section class="gallery">
+    <section class="text-center py-36 page-section" id="galeri" class="gallery">
         <h1 class="text-center text-yellow-800">Galeri</h1>
 
         <section class="gallery__filter">
